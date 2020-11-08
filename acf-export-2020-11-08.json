@@ -4,6 +4,22 @@
         "title": "Настройки почты",
         "fields": [
             {
+                "key": "field_5fa816c134e06",
+                "label": "Общие настройки",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
                 "key": "field_5fa7b7f31cdb8",
                 "label": "Email",
                 "name": "email",
@@ -65,7 +81,7 @@
                 "label": "Куда отвечать",
                 "name": "addreply",
                 "type": "text",
-                "instructions": "необязательно",
+                "instructions": "(необязательно)",
                 "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {
@@ -99,144 +115,11 @@
                 "maxlength": ""
             },
             {
-                "key": "field_5fa808515637f",
-                "label": "SMTP",
-                "name": "smtp",
-                "type": "text",
-                "instructions": "Отправлять ли через почтовый ящик, 1 - да, 0 - нет, отправлять через хостинг",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "50",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": 1,
-                "placeholder": "",
-                "prepend": "",
-                "append": "",
-                "maxlength": ""
-            },
-            {
-                "key": "field_5fa8087356380",
-                "label": "Хост",
-                "name": "host",
-                "type": "text",
-                "instructions": "Сервер отправки писем (приведен пример для Яндекса)",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "50",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "smtp.yandex.ru",
-                "placeholder": "",
-                "prepend": "",
-                "append": "",
-                "maxlength": ""
-            },
-            {
-                "key": "field_5fa8089356381",
-                "label": "Пользователь SMTP",
-                "name": "username",
-                "type": "text",
-                "instructions": "Логин вашего почтового ящика",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "50",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "placeholder": "",
-                "prepend": "",
-                "append": "",
-                "maxlength": ""
-            },
-            {
-                "key": "field_5fa808b756382",
-                "label": "Пароль SMTP",
-                "name": "password",
-                "type": "text",
-                "instructions": "Пароль вашего почтового ящика",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "50",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "placeholder": "",
-                "prepend": "",
-                "append": "",
-                "maxlength": ""
-            },
-            {
-                "key": "field_5fa808d556383",
-                "label": "Нужна ли авторизация",
-                "name": "auth",
-                "type": "text",
-                "instructions": "1 - нужна, 0 - не нужна",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "50",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": 1,
-                "placeholder": "",
-                "prepend": "",
-                "append": "",
-                "maxlength": ""
-            },
-            {
-                "key": "field_5fa808f956384",
-                "label": "Типа защиты",
-                "name": "secure",
-                "type": "text",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "50",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "ssl",
-                "placeholder": "",
-                "prepend": "",
-                "append": "",
-                "maxlength": ""
-            },
-            {
-                "key": "field_5fa8092756385",
-                "label": "Порт",
-                "name": "port",
-                "type": "text",
-                "instructions": "Порт сервера",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "50",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": 465,
-                "placeholder": "",
-                "prepend": "",
-                "append": "",
-                "maxlength": ""
-            },
-            {
                 "key": "field_5fa8094556386",
                 "label": "Копия письма",
                 "name": "cc",
                 "type": "text",
-                "instructions": "",
+                "instructions": "(необязательно)",
                 "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {
@@ -255,7 +138,7 @@
                 "label": "Скрытая копия",
                 "name": "bcc",
                 "type": "text",
-                "instructions": "",
+                "instructions": "(необязательно)",
                 "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {
@@ -312,7 +195,7 @@
                 "label": "Файлы клиента",
                 "name": "clientFile",
                 "type": "file",
-                "instructions": "",
+                "instructions": "Прикрепленный файл пользователя",
                 "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {
@@ -327,11 +210,27 @@
                 "mime_types": ""
             },
             {
-                "key": "field_5fa809e75638b",
-                "label": "Секретный ключ",
-                "name": "secret",
+                "key": "field_5fa816cd34e07",
+                "label": "STMP",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_5fa8089356381",
+                "label": "Пользователь SMTP",
+                "name": "username",
                 "type": "text",
-                "instructions": "reCaptcha",
+                "instructions": "Логин вашего почтового ящика",
                 "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {
@@ -346,11 +245,141 @@
                 "maxlength": ""
             },
             {
+                "key": "field_5fa808b756382",
+                "label": "Пароль SMTP",
+                "name": "password",
+                "type": "text",
+                "instructions": "Пароль вашего почтового ящика",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5fa808515637f",
+                "label": "SMTP",
+                "name": "smtp",
+                "type": "text",
+                "instructions": "1 - да, 0 - нет \/\/ - отправлять через хостинг",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": 1,
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5fa8087356380",
+                "label": "Хост",
+                "name": "host",
+                "type": "text",
+                "instructions": "Сервер отправки писем (приведен пример для Яндекса)",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "smtp.yandex.ru",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5fa8092756385",
+                "label": "Порт",
+                "name": "port",
+                "type": "text",
+                "instructions": "Порт сервера",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "33",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": 465,
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5fa808d556383",
+                "label": "Нужна ли авторизация",
+                "name": "auth",
+                "type": "text",
+                "instructions": "1 - нужна, 0 - не нужна",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "33",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": 1,
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5fa808f956384",
+                "label": "Типа защиты",
+                "name": "secure",
+                "type": "text",
+                "instructions": "ssl или tls",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "33",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "ssl",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5fa816db34e08",
+                "label": "Файлы",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
                 "key": "field_5fa80a0f5638c",
                 "label": "Максимальный объем файлов",
                 "name": "maxFilesSize",
                 "type": "text",
-                "instructions": "",
+                "instructions": "10500000 -> 10mb, 5400000 -> 5mb",
                 "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {
@@ -378,6 +407,41 @@
                     "id": ""
                 },
                 "default_value": "jpeg|jpg|png|gif|pdf|svg|tiff|ico|bmp|zip",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5fa8171834e09",
+                "label": "reCaptcha",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_5fa809e75638b",
+                "label": "Секретный ключ",
+                "name": "secret",
+                "type": "text",
+                "instructions": "reCaptcha",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
                 "placeholder": "",
                 "prepend": "",
                 "append": "",
