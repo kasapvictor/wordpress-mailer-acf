@@ -1,0 +1,31 @@
+input[type="submit"],
+input[type="file"], 
+button {
+    outline: none;
+}
+
+form .file input {
+    width: 100%;
+}
+
+.w-form {
+    position: relative;
+}
+
+.w-form-fail,
+.w-form-done {
+    position: absolute;
+    width: 100%;
+    top: 30%;
+    background: tomato;
+    color: #fff;
+}
+
+.w-form-done {
+    background: #21ac2d;
+}
+
+.w-checkbox {
+    display: inline-block;
+    margin-right: 15px;
+}
