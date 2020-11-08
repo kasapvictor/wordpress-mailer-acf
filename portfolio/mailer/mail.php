@@ -1,29 +1,31 @@
-<?php ini_set('display_errors', 'On');
+<?php //ini_set('display_errors', 'On');
+
+    // подключаем функции wordpress для корректной работы ACF
     require '../../../../wp-load.php';
 
     $settings = [
-        'email'          => get_field('email', 'option'), // адрес куда отправлять письмо, можно несколько через запятую
-        'subject'        => 'Новое сообщение с сайта '.$_SERVER['HTTP_HOST'], // тема письма с указанием адреса сайта
-        'message'        => '<strong>Данные формы:</strong>', // вводная часть письма
-        'addreply'       => '', // адрес куда отвечать (необязательно)
-        'from'           => 'Данные формы', // имя отправителя (необязательно)
-        'smtp'           => 1, // отправлять ли через почтовый ящик, 1 - да, 0 - нет, отправлять через хостинг
-        'host'           => 'smtp.yandex.ru', // сервер отправки писем (приведен пример для Яндекса)
-        'username'       => 'example@yandex.ru', // логин вашего почтового ящика
-        'password'       => 'passw0rd123', // пароль вашего почтового ящика
-        'auth'           => 1, // нужна ли авторизация, 1 - нужна, 0 - не нужна
-        'secure'         => 'ssl', // тип защиты
-        'port'           => 465, // порт сервера
-        'charset'        => 'utf-8', // кодировка письма
-        'cc'             => '', // копия письма
-        'bcc'            => '', // скрытая копия
-        'clientEmail'     => '', // поле откуда брать адрес клиента
-        'clientMessage'  => '', // текст письма, которое будет отправлено клиенту
-        'clientFile'     => '', // вложение, которое будет отправлено клиенту
-        'secret'         => '',
-        'maxFilesSize'   => 10500000, // маскимальный общий размер файлов 10500000 -> 10mb, 5400000 -> 5mb
-        'typeFiles'      => 'jpeg|jpg|png|gif|pdf|svg|tiff|ico|bmp|zip', // допустимые форматы файлов например ['jpg', 'png', 'zip', 'pdf']
-    ];
+    'email'          => get_field('email', 'option'), // адрес куда отправлять письмо, можно несколько через запятую
+    'subject'        => get_field('subject', 'option').$_SERVER['HTTP_HOST'], // тема письма с указанием адреса сайта
+    'message'        => get_field('message', 'option'), // вводная часть письма
+    'addreply'       => get_field('addreply', 'option'), // адрес куда отвечать (необязательно)
+    'from'           => get_field('from', 'option'), // имя отправителя (необязательно)
+    'smtp'           => get_field('smtp', 'option'), // отправлять ли через почтовый ящик, 1 - да, 0 - нет, отправлять через хостинг
+    'host'           => get_field('host', 'option'), // сервер отправки писем (приведен пример для Яндекса)
+    'username'       => get_field('username', 'option'), // логин вашего почтового ящика
+    'password'       => get_field('password', 'option'), // пароль вашего почтового ящика
+    'auth'           => get_field('auth', 'option'), // нужна ли авторизация, 1 - нужна, 0 - не нужна
+    'secure'         => get_field('secure', 'option'), // тип защиты
+    'port'           => get_field('port', 'option'), // порт сервера
+    'charset'        => 'utf-8', // кодировка письма
+    'cc'             => get_field('cc', 'option'), // копия письма
+    'bcc'            => get_field('bcc', 'option'), // скрытая копия
+    'clientEmail'    => get_field('clientEmail', 'option'), // поле откуда брать адрес клиента
+    'clientMessage'  => get_field('clientMessage', 'option'), // текст письма, которое будет отправлено клиенту
+    'clientFile'     => get_field('clientFile', 'option'), // вложение, которое будет отправлено клиенту
+    'secret'         => get_field('secret', 'option'),
+    'maxFilesSize'   => get_field('maxFilesSize', 'option'), // маскимальный общий размер файлов 10500000 -> 10mb, 5400000 -> 5mb
+    'typeFiles'      => get_field('typeFiles', 'option'), // допустимые форматы файлов например ['jpg', 'png', 'zip', 'pdf']
+];
     $errors = [];
 
 if (isset($_POST) && !empty($_POST)) {

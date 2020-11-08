@@ -1,4 +1,5 @@
 <?php
+
 /**
  * PHPMailer - PHP email creation and transport class.
  * PHP Version 5.0.0
@@ -410,7 +411,7 @@ class PHPMailer
      *   string  $subject       the subject
      *   string  $body          the email body
      *   string  $from          email address of sender
-     * 
+     *
      * @type string
      */
     public $action_function = '';
@@ -1394,8 +1395,8 @@ class PHPMailer
             return $this->secureHeader($addr[0]);
         } else {
             return $this->encodeHeader($this->secureHeader($addr[1]), 'phrase') . " <" . $this->secureHeader(
-                $addr[0]
-            ) . ">";
+                    $addr[0]
+                ) . ">";
         }
     }
 
@@ -2131,7 +2132,8 @@ class PHPMailer
             if (!is_readable($path)) {
                 throw new phpmailerException($this->lang('file_open') . $path, self::STOP_CONTINUE);
             }
-            $magic_quotes = get_magic_quotes_runtime();
+            //$magic_quotes = get_magic_quotes_runtime();
+            $magic_quotes = ini_set('magic_quotes_runtime', 0);
             if ($magic_quotes) {
                 if (version_compare(PHP_VERSION, '5.3.0', '<')) {
                     set_magic_quotes_runtime(0);
@@ -2218,7 +2220,7 @@ class PHPMailer
             /** @noinspection PhpMissingBreakStatementInspection */
             case 'comment':
                 $x = preg_match_all('/[()"]/', $str, $matches);
-                // Intentional fall-through
+            // Intentional fall-through
             case 'text':
             default:
                 $x += preg_match_all('/[\000-\010\013\014\016-\037\177-\377]/', $str, $matches);
@@ -2377,8 +2379,8 @@ class PHPMailer
             case 'comment':
                 //RFC 2047 section 5.2
                 $pattern = '\(\)"';
-                //intentional fall-through
-                //for this reason we build the $pattern without including delimiters and []
+            //intentional fall-through
+            //for this reason we build the $pattern without including delimiters and []
             case 'text':
             default:
                 //RFC 2047 section 5.1
