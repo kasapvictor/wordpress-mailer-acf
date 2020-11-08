@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a7a90e20-9c98-4852-821d-5faa731d8b53" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/portfolio/mailer/class-phpmailer.php" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/mailer/class-phpmailer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/mailer/mail.php" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/mailer/mail.php" afterDir="false" />
-    </list>
+    <list default="true" id="a7a90e20-9c98-4852-821d-5faa731d8b53" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,7 +32,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604849498606</updated>
-      <workItem from="1604849500186" duration="86000" />
+      <workItem from="1604849500186" duration="205000" />
     </task>
     <servers />
   </component>
